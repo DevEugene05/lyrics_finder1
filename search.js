@@ -89,6 +89,6 @@ function fetchLyrics(song) {
       });
     })
     .fail(() => {
-      lyricsDiv.html('<p>Unable to load lyrics 😢</p>').slideDown();
+      lyricsDiv.html('<p>Unable to load lyrics</p>').slideDown();
     });
 }
