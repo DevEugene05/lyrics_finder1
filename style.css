@@ -1,0 +1,151 @@
+/* Base setup */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #f2f2f2;
+  background: radial-gradient(circle at top, #0a0a0a 0%, #000 100%);
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.title {
+  text-align: center;
+  padding: 30px;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8;
+  animation: glowTitle 2s infinite alternate;
+}
+
+@keyframes glowTitle {
+  from { text-shadow: 0 0 10px #00ffc8; }
+  to { text-shadow: 0 0 25px #00bfa5, 0 0 40px #00ffc8; }
+}
+
+.title-name a {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2.5rem;
+  color: #00ffc8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.title-name a:hover {
+  color: #7ef9ff;
+}
+
+.title-legend {
+  font-size: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+/* Search bar */
+.search {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-song {
+  width: 80%;
+  max-width: 500px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: 2px solid #00ffc8;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-song:focus {
+  border-color: #7ef9ff;
+  box-shadow: 0 0 10px #00ffc8;
+}
+
+/* Results */
+.results {
+  margin: 40px auto 20px auto;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 600px;
+}
+
+.result {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 200, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.result:hover {
+  background: rgba(0, 255, 200, 0.1);
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+}
+
+/* Lyrics Display */
+.lyrics {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 40px auto;
+  width: 85%;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+  line-height: 1.7;
+  display: none;
+}
+
+.lyrics-title {
+  color: #00ffc8;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.copy-lyrics {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #00ffc8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+.copy-lyrics:hover {
+  color: #7ef9ff;
+  text-shadow: 0 0 10px #00ffc8;
+}
+
+/* Footer */
+.credits {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 15px;
+  color: #aaa;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.credits a {
+  color: #00ffc8;
+  text-decoration: none;
+}
+.credits a:hover {
+  color: #7ef9ff;
+}

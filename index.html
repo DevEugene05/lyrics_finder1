@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>LyricFinder - Find Any Song Lyrics</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee+Shade|Crimson+Text|Poppins:400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 class="title-name">
+          <a href="#">LyricFinder</a>
+        </h1>
+        <h2 class="title-legend">Find your favorite lyrics instantly </h2>
+      </div>
+
+      <div class="search">
+        <input
+          type="text"
+          name="song"
+          class="search-song"
+          autofocus="autofocus"
+          placeholder="Type a song name..."
+          id="search-input"
+        />
+        <ul class="results" id="results"></ul>
+      </div>
+
+      <div class="lyrics" id="lyrics"></div>
+    </div>
+
+    <div class="credits">
+      Built by EMX industry/<a href="https://api.lyrics.ovh" target="_blank">Powered by EMX API</a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="search.js"></script>
+  </body>
+</html>
