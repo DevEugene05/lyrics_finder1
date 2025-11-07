@@ -15,8 +15,8 @@ html, body {
   justify-content: center;
 }
 .title {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 2.5rem;
+  font-family: fantasy;
+  font-size: 3rem;
   color: #00ffc8;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -84,7 +84,7 @@ button:active {
 }
 
 
-/* Header */
+
 .title {
   text-align: center;
   padding: 30px;
