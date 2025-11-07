@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #f2f2f2;
+  background: radial-gradient(circle at top, #0a0a0a 0%, #000 100%);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  justify-content: center;
+}
+.title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 2.5rem;
+  color: #00ffc8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.title:hover {
+  color: #7ef9ff;
+}
+
+.title-legend {
+  font-size: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+@keyframes glowTitle {
+  from { text-shadow: 0 0 10px #00ffc8; }
+  to { text-shadow: 0 0 25px #00bfa5, 0 0 40px #00ffc8; }
+}
+
+.title-legend {
+  font-size: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+button{
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px;
+      background-color: #00bfa5;
+    color: #000;
+    
+    
+}
+button:hover{
+  
+color: white;
+    background-color: darkgreen;
+}
+
+
+/* Header */
+.title {
+  text-align: center;
+  padding: 30px;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8;
+  animation: glowTitle 2s infinite alternate;
+}
+
+@keyframes glowTitle {
+  from { text-shadow: 0 0 10px #00ffc8; }
+  to { text-shadow: 0 0 25px #00bfa5, 0 0 40px #00ffc8; }
+}
+
+
